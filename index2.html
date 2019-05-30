@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var array = [20,0,1,10,3,2,4,5,7,6,8,11,9,15,12,13,4,16,18,17,14]
+
+      var sortedArray = array.sort();
+
+      var results = []
+
+      for (var i = 0; i < sortedArray.length - 1; i++) {
+          if (sortedArray[i + 1] === sortedArray[i]) {
+              results.push(sortedArray[i])
+          }
+      }
+
+      console.log(results)
+      console.log(sortedArray)
+
+
+    </script>
+
+  </body>
+</html>
